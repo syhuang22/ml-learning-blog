@@ -1,0 +1,102 @@
+# ===================================
+# 🌐 Site Settings
+# ===================================
+title: "James 黃少禹's ML Learning Blog"
+tagline: "Deep Learning • JAX • Inference • AI Infrastructure"
+description: >-
+  Learning Deep Learning — from MLPs to Transformers to Inference at Scale.
+
+url: "https://syhuang22.github.io"
+baseurl: "/ml-learning-blog"
+
+lang: "zh-TW"
+timezone: "America/Los_Angeles"
+
+# ===================================
+# 👤 Author Profile
+# ===================================
+author:
+  name: "James 黃少禹"
+  bio: "Software Engineer @ Google | Building ML Infra | Learning Deep Learning from scratch"
+  avatar: "/assets/img/avatar.png"
+  location: "Bay Area, California"
+  email: "syhuang22@gmail.com"
+
+social:
+  github: "syhuang22"
+  linkedin: "shao-yu-huang"
+  twitter: "syhuang22"
+
+# ===================================
+# 🧩 Theme Settings
+# ===================================
+remote_theme: "cotes2020/jekyll-theme-chirpy@5.3.1"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-include-cache
+
+paginate: 5
+paginate_path: "/page:num/"
+
+# ===================================
+# 📁 Collections & Directories
+# ===================================
+collections:
+  tabs:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: true
+      toc: true
+      author: "James 黃少禹"
+
+# ===================================
+# 🎨 UI / Layout
+# ===================================
+theme_mode: auto
+read_time: true
+toc: true
+sidebar:
+  avatar: true
+  bio: true
+  social: true
+  nav: true
+
+# ===================================
+# 🔍 SEO / Analytics
+# ===================================
+google_analytics:
+  id: "G-XXXXXXXXXX"
+  anonymize_ip: true
+
+# ===================================
+# 🧱 Build Settings
+# ===================================
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+permalink: /:categories/:title/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+
+# ===================================
+# 📦 Footer
+# ===================================
+footer:
+  license: "© 2025 James 黃少禹"
+  description: "Powered by Jekyll • Theme Chirpy v5.3.1"
