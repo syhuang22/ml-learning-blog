@@ -30,14 +30,14 @@ social:
 # ===================================
 # 🧩 Theme Settings
 # ===================================
-remote_theme: "cotes2020/jekyll-theme-chirpy@5.3.1"
 
+kramdown:
+  syntax_highlighter_opts:
+    disable: true
+    
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-include-cache
 
 paginate: 5
 paginate_path: "/page:num/"
